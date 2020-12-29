@@ -1,0 +1,14 @@
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    <div class="container">
+      <a class= " navbar-brand" href="#">COVID-19 Tracker Application</a>
+      <ul>
+            <% if(locals.user){%>
+                <div><%= user.name%></div>
+                <a class="a-1 navbar-brand" href="/users/signout">Sign Out</a>
+            <%}else{%>
+                <a class="a-1 navbar-brand" href="/users/signin">Sign In</a>
+                <a class="a-1 navbar-brand" href="/users/signup">Sign Up</a>
+            <%}%>
+        </ul>
+    </div>
+  </nav>
